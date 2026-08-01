@@ -47,6 +47,7 @@ E: The repository 'https://download.docker.com/linux/debian kali-rolling Release
 ```
 
 > **Evidence:** `1_lab0.png` — First attempt running as normal user; the script executed several `sudo -E sh -c` steps before failing.
+<img width="1855" height="306" alt="1_lab0" src="https://github.com/user-attachments/assets/763944f0-ff0b-4f98-9b5e-8f6b45d40b91" />
 
 ---
 
