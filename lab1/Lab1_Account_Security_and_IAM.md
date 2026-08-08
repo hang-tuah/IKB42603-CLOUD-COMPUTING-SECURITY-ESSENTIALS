@@ -145,8 +145,7 @@ aws $EP iam get-group --group-name Admins
 ![lab1_3](lab1_3.png)
 
 **Evidence — lab1_4.png (user created, added to group, group verified):**
-<img width="1680" height="715" alt="lab1_4" src="https://github.com/user-attachments/assets/55a53793-6cf9-4137-a2b3-b37e219b791b" />
-
+<img width="1680" height="715" alt="lab1_4" src="https://github.com/user-attachments/assets/0a9f6a4c-088a-464b-aef2-853d40048f44" />
 ![lab1_4](lab1_4.png)
 
 **Key output — `iam create-group`:**
@@ -211,7 +210,7 @@ aws $EP iam list-attached-user-policies --user-name Analyst_ASRI
 ```
 
 **Evidence — lab1_5.png:**
-<img width="1802" height="501" alt="lab1_5" src="https://github.com/user-attachments/assets/76f1cfe8-cc84-41fd-baa8-9f25e0c3dd27" />
+<img width="1802" height="501" alt="lab1_5" src="https://github.com/user-attachments/assets/95ab080e-f426-47bf-8f5e-d40e8a3d82b1" />
 
 ![lab1_5](lab1_5.png)
 
@@ -259,7 +258,8 @@ aws $EP iam update-access-key --user-name Analyst_ASRI \
 ```
 
 **Evidence — lab1_6.png:**
-<img width="1875" height="752" alt="lab1_6" src="https://github.com/user-attachments/assets/5210d06d-7d6b-493c-b67b-52c55cdf4248" />
+<img width="1875" height="752" alt="lab1_6" src="https://github.com/user-attachments/assets/4b48af39-bd72-4ce0-a1bf-4e7926154df7" />
+
 
 ![lab1_6](lab1_6.png)
 
@@ -404,6 +404,7 @@ sudo kubectl create rolebinding dev-user-binding -n dev \
 ```
 
 **Evidence — lab1_9.png:**
+<img width="1632" height="187" alt="lab1_9" src="https://github.com/user-attachments/assets/8e2f3f8d-4a64-4ee7-8e75-c4afc1f93b83" />
 
 ![lab1_9](lab1_9.png)
 
@@ -441,6 +442,7 @@ sudo kubectl auth can-i list pods   -n prod --as=$SA
 ```
 
 **Evidence — lab1_10.png:**
+<img width="1121" height="237" alt="lab1_10" src="https://github.com/user-attachments/assets/f5d86327-a864-4d4e-95ef-b04c5eab4037" />
 
 ![lab1_10](lab1_10.png)
 
@@ -469,6 +471,8 @@ sudo kubectl get rolebinding dev-user-binding -n dev -o yaml
 ```
 
 **Evidence — lab1_11.png:**
+<img width="1322" height="426" alt="lab1_11" src="https://github.com/user-attachments/assets/a8db8b52-c4d2-47e8-b729-b256ef08a4fe" />
+
 
 ![lab1_11](lab1_11.png)
 
@@ -624,6 +628,7 @@ This demonstrates the **Principle of Least Privilege** combined with
 After completing the lab, all resources are removed to free up system resources.
 
 **Evidence — lab1_12.png:**
+<img width="1162" height="256" alt="lab1_12" src="https://github.com/user-attachments/assets/57547620-4b54-4418-b470-72f623d974c0" />
 
 ![lab1_12](lab1_12.png)
 
@@ -673,10 +678,12 @@ cat main.tf
 ```
 
 **Evidence — lab1_13.png (provider block and resources 1–2):**
+<img width="1376" height="820" alt="lab1_13" src="https://github.com/user-attachments/assets/2ca688ed-5fe5-44ba-882e-3c070410bc1b" />
 
 ![lab1_13](lab1_13.png)
 
 **Evidence — lab1_14.png (resources 3–4):**
+<img width="927" height="295" alt="lab1_14" src="https://github.com/user-attachments/assets/608d6dc9-d38c-47fe-8a78-6587ff25a425" />
 
 ![lab1_14](lab1_14.png)
 
@@ -737,6 +744,7 @@ resource "aws_iam_user_group_membership" "admin_membership" {
 #### Step 2 — Verify LocalStack is Still Running
 
 **Evidence — lab1_15.png:**
+<img width="1915" height="200" alt="lab1_15" src="https://github.com/user-attachments/assets/7f444820-e212-46b2-8640-1f3364972b6a" />
 
 ![lab1_15](lab1_15.png)
 
@@ -754,6 +762,7 @@ terraform init
 ```
 
 **Evidence — lab1_16.png:**
+<img width="1101" height="552" alt="lab1_16" src="https://github.com/user-attachments/assets/62416c0d-d966-4bdb-8bc7-64bcddf7a90d" />
 
 ![lab1_16](lab1_16.png)
 
@@ -776,10 +785,12 @@ terraform plan
 ```
 
 **Evidence — lab1_17.png (resources: admins group, policy attachment, admin user):**
+<img width="1842" height="822" alt="lab1_17" src="https://github.com/user-attachments/assets/879ff16e-4f89-4cb2-aff9-20b6dec70bb5" />
 
 ![lab1_17](lab1_17.png)
 
 **Evidence — lab1_18.png (resource: admin_membership + plan summary):**
+<img width="1670" height="377" alt="lab1_18" src="https://github.com/user-attachments/assets/dd27c4f3-e5d9-471c-ac34-05f372e71585" />
 
 ![lab1_18](lab1_18.png)
 
@@ -818,6 +829,7 @@ aws $EP iam create-policy --policy-name EnforceMFAPolicy \
 ```
 
 **Evidence — lab1_19.png:**
+<img width="1711" height="270" alt="lab1_19" src="https://github.com/user-attachments/assets/59b8188b-3470-4c9e-b933-1934d192591b" />
 
 ![lab1_19](lab1_19.png)
 
@@ -850,6 +862,7 @@ aws $EP iam list-attached-user-policies --user-name Analyst_ASRI
 ```
 
 **Evidence — lab1_20.png:**
+<img width="1865" height="222" alt="lab1_20" src="https://github.com/user-attachments/assets/95aa3287-bb83-4c5f-97b4-5ad8f7b0d67e" />
 
 ![lab1_20](lab1_20.png)
 
@@ -888,6 +901,7 @@ sudo kubectl create clusterrole cluster-pod-reader \
 ```
 
 **Evidence — lab1_21.png:**
+<img width="1917" height="397" alt="lab1_21" src="https://github.com/user-attachments/assets/a4b002f7-371b-428f-a653-b97f6b293912" />
 
 ![lab1_21](lab1_21.png)
 
@@ -918,6 +932,7 @@ sudo kubectl auth can-i list pods -n prod --as=$SA
 ```
 
 **Evidence — lab1_22.png:**
+<img width="1082" height="197" alt="lab1_22" src="https://github.com/user-attachments/assets/6fbb1456-e305-4b3a-a487-3be16847b1bc" />
 
 ![lab1_22](lab1_22.png)
 
@@ -958,6 +973,7 @@ sudo kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gateke
 ```
 
 **Evidence — lab1_23.png:**
+<img width="1572" height="727" alt="lab1_23" src="https://github.com/user-attachments/assets/d1e3dbc7-56c7-457a-b694-3c6fdbda3372" />
 
 ![lab1_23](lab1_23.png)
 
@@ -997,6 +1013,7 @@ sudo kubectl apply -f template.yaml
 ```
 
 **Evidence — lab1_24.png:**
+<img width="1156" height="467" alt="lab1_24" src="https://github.com/user-attachments/assets/274e7cba-a30f-4202-b4a5-8a7c2b607d9b" />
 
 ![lab1_24](lab1_24.png)
 
@@ -1039,6 +1056,7 @@ sudo kubectl run root-test --image=nginx -n dev
 ```
 
 **Evidence — lab1_25.png:**
+<img width="1916" height="527" alt="lab1_25" src="https://github.com/user-attachments/assets/3f713149-cb5a-48bb-bc9b-2f7aec229aed" />
 
 ![lab1_25](lab1_25.png)
 
