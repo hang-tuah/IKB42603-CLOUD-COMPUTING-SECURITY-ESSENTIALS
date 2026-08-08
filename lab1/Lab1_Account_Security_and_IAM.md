@@ -1,8 +1,8 @@
 # Lab 1 — Cloud Account Security, Identity & Access Management
-**Course:** IKB42603 Cloud Computing Security Essentials
-**Lab Duration:** Weeks 1–2 (Session A + Session B)
-Student: MUHAMMAD ASRI BIN ROSLI
-STUDENT ID:52215225028
+**Course:** IKB42603 Cloud Computing Security Essentials <br>
+**Lab Duration:** Weeks 1–2 (Session A + Session B) <br>
+**Student:** MUHAMMAD ASRI BIN ROSLI <br>
+**Student ID:** 52215225028
 
 ---
 
