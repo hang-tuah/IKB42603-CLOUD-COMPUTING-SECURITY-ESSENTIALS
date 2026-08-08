@@ -49,6 +49,7 @@ curl http://localhost:4566/_localstack/health
 ```
 
 **Evidence — lab1_1.png:**
+<img width="1915" height="351" alt="lab1_1" src="https://github.com/user-attachments/assets/9c706c8b-e821-4569-b78a-0f1356abd886" />
 
 ![lab1_1](lab1_1.png)
 
@@ -78,6 +79,7 @@ aws --endpoint-url=http://localhost:4566 sts get-caller-identity
 ```
 
 **Evidence — lab1_2.png:**
+<img width="1227" height="252" alt="lab1_2" src="https://github.com/user-attachments/assets/c0e0a6b6-ef90-40d1-ad20-eacb1e127919" />
 
 ![lab1_2](lab1_2.png)
 
@@ -138,10 +140,12 @@ aws $EP iam get-group --group-name Admins
 ```
 
 **Evidence — lab1_3.png (group created):**
+<img width="1090" height="282" alt="lab1_3" src="https://github.com/user-attachments/assets/839df213-78c2-46dd-af38-9cf8b5b958ba" />
 
 ![lab1_3](lab1_3.png)
 
 **Evidence — lab1_4.png (user created, added to group, group verified):**
+<img width="1680" height="715" alt="lab1_4" src="https://github.com/user-attachments/assets/55a53793-6cf9-4137-a2b3-b37e219b791b" />
 
 ![lab1_4](lab1_4.png)
 
@@ -207,6 +211,7 @@ aws $EP iam list-attached-user-policies --user-name Analyst_ASRI
 ```
 
 **Evidence — lab1_5.png:**
+<img width="1802" height="501" alt="lab1_5" src="https://github.com/user-attachments/assets/76f1cfe8-cc84-41fd-baa8-9f25e0c3dd27" />
 
 ![lab1_5](lab1_5.png)
 
@@ -254,6 +259,7 @@ aws $EP iam update-access-key --user-name Analyst_ASRI \
 ```
 
 **Evidence — lab1_6.png:**
+<img width="1875" height="752" alt="lab1_6" src="https://github.com/user-attachments/assets/5210d06d-7d6b-493c-b67b-52c55cdf4248" />
 
 ![lab1_6](lab1_6.png)
 
@@ -320,6 +326,7 @@ sudo kubectl get nodes
 ```
 
 **Evidence — lab1_7.png:**
+<img width="1171" height="610" alt="lab1_7" src="https://github.com/user-attachments/assets/b0d766ae-d735-4bf2-8c10-9389c5f4370a" />
 
 ![lab1_7](lab1_7.png)
 
