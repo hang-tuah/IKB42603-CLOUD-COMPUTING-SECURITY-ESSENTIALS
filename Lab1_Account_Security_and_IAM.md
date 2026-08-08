@@ -250,6 +250,7 @@ aws $EP iam update-access-key --user-name Analyst_ASRI \
 ```
 
 **Evidence — lab1_6.png:**
+<img width="1875" height="752" alt="lab1_6" src="https://github.com/user-attachments/assets/3f760d03-1c0a-45f3-b6ce-a28715161ea9" />
 
 ![lab1_6](lab1_6.png)
 
