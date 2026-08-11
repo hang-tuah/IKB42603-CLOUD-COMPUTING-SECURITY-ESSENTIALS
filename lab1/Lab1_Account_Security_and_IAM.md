@@ -366,6 +366,7 @@ sudo kubectl get namespaces
 **Evidence — lab1_8.png:**
 
 ![lab1_8](lab1_8.png)
+<img width="1916" height="607" alt="lab1_8" src="https://github.com/user-attachments/assets/10a70913-7d42-4226-8dc3-7b5919ee5699" />
 
 **Key output:**
 ```
