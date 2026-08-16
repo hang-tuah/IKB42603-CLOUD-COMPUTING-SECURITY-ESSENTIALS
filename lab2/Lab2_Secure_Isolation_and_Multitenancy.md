@@ -76,6 +76,7 @@ By the end of this lab, you should be able to:
 ---
 
 ### Step 1 – Create the KinD Cluster
+<img width="1616" height="491" alt="lab2_1" src="https://github.com/user-attachments/assets/d1122a5e-f4a0-4330-bbb5-eb5b18ffa45f" />
 
 **Evidence:** `lab2_1.png`
 
@@ -115,6 +116,7 @@ By disabling the default CNI and specifying a custom pod subnet, we prepare the 
 ---
 
 ### Step 2 – Install Calico CNI
+<img width="1807" height="766" alt="lab2_2" src="https://github.com/user-attachments/assets/1dbd43fa-3010-4590-816d-67b4e2c51597" />
 
 **Evidence:** `lab2_2.png`
 
@@ -154,6 +156,7 @@ Calico is the brain behind network-level isolation. It runs as a **DaemonSet** (
 ---
 
 ### Step 3 – Verify Calico Rollout
+<img width="1532" height="92" alt="lab2_3" src="https://github.com/user-attachments/assets/7acea51c-2b06-4583-9ee2-992c732884c9" />
 
 **Evidence:** `lab2_3.png`
 
@@ -177,6 +180,7 @@ Before moving forward, it is important to confirm that Calico is **fully running
 ---
 
 ### Step 4 – Create Tenant Namespaces
+<img width="1132" height="145" alt="lab2_4" src="https://github.com/user-attachments/assets/a3339455-dd50-4df6-a798-38810390e7c5" />
 
 **Evidence:** `lab2_4.png`
 
@@ -207,6 +211,7 @@ This is the foundational step for multitenancy — everything else builds on nam
 ---
 
 ### Step 5 – Deploy Applications per Tenant
+<img width="1436" height="145" alt="lab2_5" src="https://github.com/user-attachments/assets/0c4c124c-2a99-42cd-95eb-d7289907d195" />
 
 **Evidence:** `lab2_5.png`
 
@@ -233,6 +238,7 @@ This simulates a real multitenant scenario where each customer runs similar or i
 ---
 
 ### Step 6 – Expose Services and Verify Pods
+<img width="1261" height="417" alt="lab2_6" src="https://github.com/user-attachments/assets/5e8c370e-884a-4f08-ae79-6ae794a931af" />
 
 **Evidence:** `lab2_6.png`
 
@@ -269,6 +275,7 @@ Each tenant now has a running pod and a ClusterIP service. The **ClusterIP** is 
 ---
 
 ### Step 7 – Test Cross-Namespace Traffic (Before Policy)
+<img width="1917" height="191" alt="lab2_7" src="https://github.com/user-attachments/assets/d8db41cd-4f84-48fd-9d86-48cf7d7b8b52" />
 
 **Evidence:** `lab2_7.png`
 
@@ -301,6 +308,7 @@ This test proves the **problem** we need to solve — without NetworkPolicy, ten
 ---
 
 ### Step 8 – Apply Resource Quota to Tenant-A
+<img width="1385" height="525" alt="lab2_8" src="https://github.com/user-attachments/assets/ba10fb99-a0ab-485c-9e99-82089a3b9a19" />
 
 **Evidence:** `lab2_8.png`
 
@@ -358,6 +366,7 @@ Currently 1 pod is in use (the nginx deployment), with 0 CPU/memory requests dec
 ---
 
 ### Step 9 – Apply Default-Deny Network Policy to Tenant-B
+<img width="1107" height="251" alt="lab2_9" src="https://github.com/user-attachments/assets/b06bf3ab-e134-4971-9279-b1638e7f582e" />
 
 **Evidence:** `lab2_9.png`
 
@@ -399,6 +408,7 @@ This is the network isolation counterpart to namespace isolation. Combined with 
 ---
 
 ### Step 10 – Test Resource Quota Enforcement
+<img width="1916" height="120" alt="lab2_10" src="https://github.com/user-attachments/assets/dfea9e5e-645d-4dcc-9075-f56fbb110825" />
 
 **Evidence:** `lab2_10.png`
 
@@ -429,6 +439,7 @@ This is a security benefit — it forces tenants to be explicit about resource u
 ---
 
 ### Step 11 – RBAC: Scoped Secret Access per Tenant
+<img width="1918" height="462" alt="lab2_11" src="https://github.com/user-attachments/assets/292de5de-c0c9-441d-bad0-0d4fd1820e4f" />
 
 **Evidence:** `lab2_11.png`
 
@@ -486,6 +497,7 @@ The result: `app-a` can read its own tenant's secrets (`yes`) but is **completel
 ---
 
 ### Step 12 – Data Lifecycle and Secure Wipe (Docker Volume)
+<img width="1918" height="528" alt="lab2_12" src="https://github.com/user-attachments/assets/dd1f1186-5901-478a-9927-f63ea03a1e83" />
 
 **Evidence:** `lab2_12.png`
 
@@ -538,6 +550,7 @@ This ensures **no sensitive data residue** remains on the volume before it is re
 ---
 
 ### Step 13 – Cleanup
+<img width="1297" height="168" alt="lab2_13" src="https://github.com/user-attachments/assets/075f1593-d609-4a05-9417-777eb6f6f89b" />
 
 **Evidence:** `lab2_13.png`
 
