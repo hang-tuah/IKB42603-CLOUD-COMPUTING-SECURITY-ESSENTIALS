@@ -6,7 +6,7 @@
 **Student ID:** 52215225028 <BR />
 **Environment:** Ubuntu (VirtualBox) — `asricloud-virtualbox`  
 **Working Directory:** `~/Documents/cloudLab5`  
-**Date Completed:** 2026-09-05
+
 
 ---
 
