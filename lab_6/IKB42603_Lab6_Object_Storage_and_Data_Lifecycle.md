@@ -1,8 +1,10 @@
 # IKB42603 — Lab 6: Object Storage and Data Lifecycle
 **Course:** IKB42603 Cloud Security  
 **Lab Title:** Object Storage and Data Lifecycle  
-**Environment:** LocalStack Pro (Docker) + AWS CLI on Ubuntu VirtualBox  
-**Date Completed:** 10–11 September 2026  
+**Environment:** LocalStack Pro (Docker) + AWS CLI on Ubuntu VirtualBox  <br>
+Name: MUHAMMAD ASRI BIN ROSLI <BR>
+STUDENT ID : 522151225028 <BR>
+ 
 **Status:** ✅ All tasks completed
 
 ---
